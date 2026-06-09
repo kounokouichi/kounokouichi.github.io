@@ -13,12 +13,12 @@ class ResponsiveLayout extends StatelessWidget {
   });
 
   static bool isDesktop(BuildContext context) {
-    return MediaQuery.of(context).size.width >= 1200;
+    return MediaQuery.of(context).size.width >= 1024;
   }
 
   static bool isTablet(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    return width >= 768 && width < 1200;
+    return width >= 768 && width < 1024;
   }
 
   static bool isMobile(BuildContext context) {
@@ -29,7 +29,7 @@ class ResponsiveLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
 
-    if (width >= 1200) return desktop;
+    if (width >= 1024) return desktop;
     if (width >= 768) return tablet;
     return mobile;
   }

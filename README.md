@@ -18,4 +18,8 @@ samples, guidance on mobile development, and a full API reference.
 
 ## メモ
 ### git pages用のビルドコマンド
-flutter build web --base-href "/"    
+fvm flutter run -d chrome -v
+
+### ビルドファイルの手動配置
+cp -r build/web/* docs/
+
