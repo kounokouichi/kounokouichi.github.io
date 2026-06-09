@@ -6,41 +6,62 @@ import 'package:portfolio/features/portfolio/domain/qualification.dart';
 const portfolioData = PortfolioData(
   experiences: [
     Experience(
-      period: '2024-現在',
-
-      titleJa: '金融アプリ開発',
-      titleEn: 'Financial Application',
-
-      roleJa: 'Flutterエンジニア',
-      roleEn: 'Flutter Engineer',
-
-      descriptionJa: '新規開発および保守運用を担当',
-
-      descriptionEn: 'Responsible for development and maintenance',
+      period: '2026/01-現在',
+      titleJa: '保険契約管理アプリ',
+      titleEn: '',
+      roleJa: 'SE・モバイルアプリエンジニア',
+      roleEn: '',
+      descriptionJa: 'ユーザー数400万人超。マイナンバーカードの読取り機能周辺などを担当',
+      descriptionEn: '',
+    ),
+    Experience(
+      period: '2024/11-2025/12',
+      titleJa: '建設用車両メンテアプリ',
+      titleEn: '',
+      roleJa: 'SE・モバイルアプリエンジニア',
+      roleEn: '',
+      descriptionJa: '10カ国以上で展開。API呼出し処理のパフォーマンス改善などを担当',
+      descriptionEn: '',
+    ),
+    Experience(
+      period: '2023/06-2024/06',
+      titleJa: 'パチンコ・パチスロの出玉情報などを提供するサービス',
+      titleEn: '',
+      roleJa: 'WEBエンジニア',
+      roleEn: '',
+      descriptionJa: '言語のバージョンアップやサイネージの広告画面作成などを担当',
+      descriptionEn: '',
     ),
   ],
-
   projects: [
     Project(
       titleJa: 'ポートフォリオサイト',
       titleEn: 'Portfolio Website',
-
       techStack: 'Flutter Web',
-
-      descriptionJa: '自己紹介用Webサイト',
-
-      descriptionEn: 'Portfolio website built with Flutter Web',
+      descriptionJa: '自己紹介用Webサイト。このサイトです。',
+      descriptionEn: '',
     ),
   ],
-
   qualifications: [
-    Qualification(title: 'AWS SAA', year: '2025'),
-    Qualification(title: 'TOEIC 860', year: '2025'),
+    Qualification(title: '応用情報技術者試験', year: '2018'),
+    Qualification(title: 'TOEIC 770', year: '2026'),
   ],
-
-  languages: ['Dart', 'Kotlin', 'Swift'],
-
-  frameworks: ['Flutter', 'Riverpod', 'Firebase'],
-
-  tools: ['Git', 'Docker', 'Figma'],
+  languages: [
+    'Dart',
+    'PHP',
+    'HTML/CSS',
+    'JavaScript',
+    'Java',
+    'C#',
+    'C++',
+    'Python',
+  ],
+  frameworks: ['Flutter', 'CakePHP', 'Vue.js', 'Django'],
+  tools: [
+    'VS Code',
+    'Android Studio',
+    'Xcode',
+    'Git / GitHub / GitBucket',
+    'Eclipse',
+  ],
 );

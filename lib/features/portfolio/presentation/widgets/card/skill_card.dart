@@ -1,47 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/features/portfolio/presentation/providers/portfolio_data_provider.dart';
 import 'package:portfolio/shared/widgets/section_card.dart';
-import 'package:portfolio/shared/widgets/section_title.dart';
 import 'package:portfolio/shared/widgets/skill_chip.dart';
 
-class SkillCard extends StatelessWidget {
+class SkillCard extends ConsumerWidget {
   const SkillCard({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final data = ref.watch(portfolioProvider);
     return SectionCard(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const SectionTitle(icon: Icons.code, title: '保持スキル'),
-          const SizedBox(height: 24),
-          _group('言語', [
-            'Dart',
-            'Kotlin',
-            'Swift',
-            'JavaScript',
-            'TypeScript',
-            'HTML/CSS',
-          ]),
-          const SizedBox(height: 24),
-          _group('フレームワーク', [
-            'Flutter',
-            'Android SDK',
-            'iOS SDK',
-            'Vue.js',
-            'Node.js',
-            'Laravel',
-          ]),
-          const SizedBox(height: 24),
-          _group('ツール', [
-            'VS Code',
-            'Android Studio',
-            'Xcode',
-            'Git / GitHub',
-            'Docker',
-            'Figma',
-          ]),
-        ],
-      ),
+      title: '保持スキル',
+      icon: Icons.code,
+      children: [
+        _group('言語', data.languages),
+        const SizedBox(height: 24),
+        _group('フレームワーク', data.frameworks),
+        const SizedBox(height: 24),
+        _group('ツール', data.tools),
+      ],
     );
   }
 

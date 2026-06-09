@@ -4,15 +4,10 @@ import 'qualification.dart';
 
 class PortfolioData {
   final List<Experience> experiences;
-
   final List<Project> projects;
-
   final List<Qualification> qualifications;
-
   final List<String> languages;
-
   final List<String> frameworks;
-
   final List<String> tools;
 
   const PortfolioData({

@@ -1,12 +1,9 @@
 class Experience {
   final String period;
-
   final String titleJa;
   final String titleEn;
-
   final String roleJa;
   final String roleEn;
-
   final String descriptionJa;
   final String descriptionEn;
 

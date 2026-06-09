@@ -1,9 +1,7 @@
 class Project {
   final String titleJa;
   final String titleEn;
-
   final String techStack;
-
   final String descriptionJa;
   final String descriptionEn;
 

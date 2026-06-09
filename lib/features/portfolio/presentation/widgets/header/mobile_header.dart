@@ -12,13 +12,13 @@ class MobileHeader extends StatelessWidget {
         children: [
           const Icon(Icons.code),
           const SizedBox(width: 12),
-          const Expanded(child: Text('Taro Yamada')),
-          IconButton(
-            icon: const Icon(Icons.menu),
-            onPressed: () {
-              Scaffold.of(context).openEndDrawer();
-            },
-          ),
+          const Expanded(child: Text('Kouichi Kono')),
+          // IconButton(
+          //   icon: const Icon(Icons.menu),
+          //   onPressed: () {
+          //     Scaffold.of(context).openEndDrawer();
+          //   },
+          // ),
         ],
       ),
     );

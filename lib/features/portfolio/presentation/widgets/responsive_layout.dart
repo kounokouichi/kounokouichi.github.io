@@ -29,8 +29,8 @@ class ResponsiveLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
 
-    if (width >= 1200) desktop;
-    if (width >= 768) tablet;
+    if (width >= 1200) return desktop;
+    if (width >= 768) return tablet;
     return mobile;
   }
 }
